@@ -1,6 +1,6 @@
 import "@/styles/global.css"
 import { Slot } from "expo-router"
-import { View, StatusBar } from "react-native"
+import { View, StatusBar, Text } from "react-native"
 import "@/utils/dayjsLocaleConfig"
 
 import {
@@ -23,7 +23,7 @@ export default function Layout() {
 
     return (
         <View className="flex-1 bg-zinc-950">
-            <StatusBar barStyle="light-content" backgroundColor="transparent" translucent />
+            <StatusBar barStyle="light-content" backgroundColor="transparent" translucent />           
             <Slot />
         </View>
     )
